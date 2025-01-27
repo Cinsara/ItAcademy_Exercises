@@ -1,5 +1,6 @@
 package Classes;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Library {
 
@@ -14,19 +15,9 @@ public class Library {
     }
 
     public void addBooks(Book book){
-        boolean exists = false;
 
-        for(Book b : collection){
-            if(b.title.equalsIgnoreCase(book.title)){
-                exists = true;
-                break;
-            }
-        }
-
-        if(!exists){
-            collection.add(book);
-            collection.sort(null);
-        }
+        collection.add(book);
+        collection.sort(Comparator.comparing(Book::getTitle));
     }
 
     public Book getPosition(int position){
@@ -47,20 +38,8 @@ public class Library {
     }
 
     public void removeBook(Book book){
-
-        boolean exists = false;
-
-        for(Book b : collection){
-            if(b.title.equalsIgnoreCase(book.title)){
-                exists = true;
-                break;
-            }
-        }
-
-        if(exists){
-            collection.remove(book);
-            collection.sort(null);
-        }
+        collection.remove(book);
+        collection.sort(Comparator.comparing(Book::getTitle));
     }
 
     public String toString(){

@@ -2,10 +2,6 @@ package Test;
 import Classes.*;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LibraryTest {
@@ -33,7 +29,7 @@ public class LibraryTest {
         Book b2 = new Book("Godzilla");
         library1.addBooks(b1);
         library1.addBooks(b2);
-        assertEquals(b1, library1.getPosition(0));
+        assertEquals(b1, library1.getPosition(1));
     }
 
     @Test
@@ -62,8 +58,8 @@ public class LibraryTest {
         Book b2 = new Book("Godzilla");
         library1.addBooks(b1);
         library1.addBooks(b2);
-        assertEquals(b1, library1.getPosition(0), "The first book should be The little prince.");
-        assertEquals(b2, library1.getPosition(1), "The second book should be Godzilla.");
+        assertEquals(b2, library1.getPosition(0), "The first book should be Godzilla.");
+        assertEquals(b1, library1.getPosition(1), "The second book should be The little prince.");
 
     }
 
@@ -92,8 +88,8 @@ public class LibraryTest {
         library1.addBooks(b2);
         library1.addBooks(b3);
 
-        assertEquals(b1,library1.getPosition(0), "The first book should be The little prince.");
-        assertEquals(b2,library1.getPosition(1), "The second book should be Godzilla.");
+        assertEquals(b1,library1.getPosition(1), "The first book should be Godzilla.");
+        assertEquals(b2,library1.getPosition(0), "The second book should be The little prince.");
         assertEquals(b3,library1.getPosition(2), "The third book should be The strongest fighter.");
 
         library1.removeBook(b2);
