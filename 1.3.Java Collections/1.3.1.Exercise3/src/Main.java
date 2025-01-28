@@ -8,7 +8,6 @@ public class Main {
 
         fillHashMap();
         randomCountry();
-
     }
 
     public static void fillHashMap() throws IOException {
@@ -25,7 +24,7 @@ public class Main {
         br.close();
     }
 
-    public static void randomCountry(){
+    public static void randomCountry() throws IOException {
 
         String username, capitalName;
         int randomNumber;
@@ -37,27 +36,29 @@ public class Main {
         System.out.println("Please write your username:");
         username = input.nextLine();
 
-        randomNumber = (int)(Math.random() * countries.size());
+        randomNumber = (int) (Math.random() * countries.size());
 
         System.out.println("The country is: " + countriesList.get(randomNumber) +
                 ". Now, guess the capital of this country! " +
                 "Please, enter a capital name:");
 
-        do{
-
+        do {
             capitalName = input.nextLine();
 
-            if(capitalName.equalsIgnoreCase(capitalsList.get(randomNumber))){
+            if (capitalName.equalsIgnoreCase(capitalsList.get(randomNumber))) {
                 System.out.println("That's the correct answer!");
                 changeNumber = 0;
-            } else{
+            } else {
                 intents--;
                 System.out.println("Oh no. That's not correct. Please, try again.\n" +
                         "You have " + intents + " more.");
             }
+        } while (intents > 0 && changeNumber > 0);
 
-        } while(intents > 0 && changeNumber > 0);
+        BufferedWriter bw = new BufferedWriter(new FileWriter("classification.txt", true));
 
+        bw.write(username + ": " + intents + " punts");
+        bw.newLine();
+        System.out.println("Data saved in classification.txt.");
     }
-
 }

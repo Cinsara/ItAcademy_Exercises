@@ -30,6 +30,5 @@ public class Main {
         while(li.hasPrevious()){
             System.out.println(li.previous());
         }
-
     }
 }

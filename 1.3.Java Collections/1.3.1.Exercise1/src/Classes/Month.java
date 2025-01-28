@@ -1,8 +1,7 @@
-import java.util.ArrayList;
+package Classes;
 
 public class Month {
 
-    //private ArrayList<String> months = new ArrayList<String>();
     private String name = "January";
 
     public Month(String name){

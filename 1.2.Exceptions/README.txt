@@ -1,49 +1,65 @@
-###🛍️ Product and Sale Application
+# Java Exercises: Exception Handling and Input Management 🚀
 
-##📋 Description
+This repository contains Java exercises focused on exception handling and input management using the `Scanner` class. Below is a breakdown of the exercises and their objectives.
 
-This project demonstrates an object-oriented approach to creating a simple product management and sales system in Java. It includes the following:
+## 📦 Level 1: Exercise 1 - Product and Sale Management
 
-- Product class with attributes name and price.
+### Classes:
+1. **Product**:
+   - Attributes: `nom` (name), `preu` (price).
 
-- Sale class that holds a collection of products and a totalPrice attribute.
+2. **Sale**:
+   - Attributes: A collection of `Product` objects and `totalPrice`.
+   - Method: `calculateTotal()`:
+     - Throws a custom exception `EmptySaleException` if the product collection is empty.
+     - If the collection is not empty, it calculates the total price by summing the prices of all products.
 
-- A method named calculateTotal() in the Sale class that:
+### Custom Exception:
+- **EmptySaleException**:
+  - Extends the `Exception` class.
+  - Constructor takes a message: `"To make a sale, you must add products first"`.
+  - The exception message is displayed using `getMessage()` when caught.
 
-    - Throws a custom exception named EmptySaleException if the product collection is empty.
+### Additional Task:
+- Write code to generate and catch an `IndexOutOfBoundsException`.
 
-    - Calculates the total price of all products and stores it in the totalPrice attribute.
+---
 
-- EmptySaleException class extending Exception, displaying a custom message.
+## 🎯 Level 2: Exercise 1 - Input Management with Exception Handling
 
-- An example of handling an IndexOutOfBoundsException.
+### Class:
+- **Entry** (Input):
+  - Purpose: Manages different exceptions that may occur when reading user input using the `Scanner` class.
 
-##🛠️ Prerequisites
+### Methods:
+All methods are static and handle exceptions by prompting the user to re-enter data until it is correctly formatted.
 
-- Java Development Kit (JDK) 8 or later
+1. **Reading Primitive Types** (Handling `InputMismatchException`):
+   - `public static byte readByte(String message)`: Reads a `byte`.
+   - `public static int readInt(String message)`: Reads an `int`.
+   - `public static float readFloat(String message)`: Reads a `float`.
+   - `public static double readDouble(String message)`: Reads a `double`.
 
-- A Java-compatible IDE or text editor (e.g., IntelliJ IDEA, Eclipse, or Visual Studio Code)
+2. **Reading Other Types** (Handling Custom Exceptions):
+   - `public static char readChar(String message)`: Reads a `char`.
+   - `public static String readString(String message)`: Reads a `String`.
+   - `public static boolean readYesOrNot(String message)`: Reads a `boolean` (returns `true` for "y" and `false` for "n").
 
-##▶️ Running the Application
+### Key Features:
+- If an exception occurs (e.g., incorrect format), the program displays an error message (e.g., `"Error de format"`) and prompts the user to re-enter the data.
+- Each method takes a `String` parameter (`missatge`) to display a prompt to the user.
 
-1. Clone or download the repository.
+---
 
+## 🛠️ How to Use
+1. Clone the repository.
 2. Open the project in your preferred Java IDE.
+3. Run the `Main` class to test the functionality.
+4. Explore the different classes to understand the implementation details.
 
-3. Compile and run the main Java file.
+---
 
-4. Test cases will demonstrate the behavior of:
+## 📝 Notes
+- Ensure you have Java installed on your system.
+- The exercises are designed to help you practice exception handling and input validation in Java.
 
-    Adding products to a sale.
-
-    Calculating the total sale price.
-
-    Handling EmptySaleException when the product list is empty.
-
-    Catching and displaying an IndexOutOfBoundsException.
-
-##💻 Technologies Used
-
-- Java: Programming language for creating object-oriented classes and custom exceptions.
-
-- JDK: Java Development Kit for compiling and running the program.

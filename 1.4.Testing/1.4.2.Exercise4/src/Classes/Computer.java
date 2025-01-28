@@ -1,7 +1,5 @@
 package Classes;
 
-import java.util.ArrayList;
-
 public class Computer {
 
     protected String name;

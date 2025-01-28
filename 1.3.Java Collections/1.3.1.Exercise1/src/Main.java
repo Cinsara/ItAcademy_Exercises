@@ -1,3 +1,4 @@
+import Classes.Month;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -13,7 +14,6 @@ public class Main {
         foundAgost();
         showHashSet();
         notDuplicates();
-
     }
 
     public static void insertMonth(){
@@ -73,7 +73,6 @@ public class Main {
         }
 
         System.out.println();
-
     }
 
     public static void convertHashSet(){
@@ -128,12 +127,7 @@ public class Main {
                 default:
                     System.out.println("Invalid option");
                     break;
-
             }
-
-
         } while(option != 0);
-
     }
-
 }

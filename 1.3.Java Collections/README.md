@@ -1,70 +1,80 @@
-# 🧑‍💻 Java Collections and File Handling Exercises
+# Java Exercises: Collections, File Handling, and Custom Classes 📚
 
-This repository contains Java exercises focused on **collections**, **file handling**, and **user interaction**. The exercises demonstrate key concepts such as working with `ArrayList`, `HashSet`, `HashMap`, `ListIterator`, and reading/writing files in Java.
-
----
-
-## Exercise Overview
-
-### Level 1: Exercise 1
-**Topic: ArrayList and HashSet Operations**  
-Create a class called `Month` with an attribute `name` (to store the name of the month).
-- Add 11 `Month` objects (each with a different name) to an `ArrayList`, excluding the month "Agost".
-- Insert the missing month ("Agost") in its correct position and demonstrate that the `ArrayList` maintains the correct order.
-- Convert the `ArrayList` into a `HashSet` and ensure that duplicates are not allowed.
-- Iterate through the list using a `for` loop and an `Iterator`.
-
-**Key Concepts**:
-- Working with `ArrayList` and `HashSet`.
-- Inserting elements at specific positions.
-- Iterating through collections.
+This repository contains Java exercises focused on working with collections (ArrayList, HashSet, HashMap), file handling, and creating custom classes with specific behaviors. Below is a breakdown of the exercises and their objectives.
 
 ---
 
-### Level 1: Exercise 2
-**Topic: List and ListIterator Operations**
-- Create and populate a `List<Integer>`.
-- Create a second `List<Integer>` and insert the elements of the first list in reverse order.
-- Use `ListIterator` to read elements from the first list and insert them into the second list.
+## 🌟 Level 1: Exercises
 
-**Key Concepts**:
-- Using `ListIterator` for bidirectional traversal.
-- Reversing the order of elements in a list.
+### Exercise 1: Month Class and ArrayList/HashSet Operations
 
----
+#### Class:
+- **Month**:
+   - Attribute: `name` (stores the name of the month).
 
-### Level 2: Exercise 1
-**Topic: HashMap and File Handling**  
-Given a file named `countries.txt` (provided in the resources section) that contains countries and their capitals:
-- Read the file and store the data in a `HashMap<String, String>`.
-- Ask the user for their name.
-- Display a random country from the `HashMap` and prompt the user to enter the corresponding capital.
-- If the user answers correctly, add one point to their score.
-- Repeat this process 10 times.
-- Save the user's name and score in a file named `classificacio.txt`.
-
-**Key Concepts**:
-- Reading from and writing to files.
-- Using `HashMap` to store key-value pairs.
-- Random selection and user interaction.
+#### Tasks:
+1. Create 11 `Month` objects (each with a unique name) and add them to an `ArrayList`, excluding the month "Agost" (August).
+2. Insert the "Agost" object in its correct position in the `ArrayList` and demonstrate that the list maintains the correct order.
+3. Convert the `ArrayList` into a `HashSet` and ensure that it does not allow duplicates.
+4. Iterate through the list using a `for` loop and an `Iterator`.
 
 ---
 
-## Running the Exercises
+### Exercise 2: Reversing a List Using ListIterator
 
+#### Tasks:
+1. Create and populate a `List<Integer>`.
+2. Create a second `List<Integer>` and insert the elements of the first list in reverse order.
+3. Use `ListIterator` to read elements from the first list and insert them into the second list.
+
+---
+
+### Exercise 3: Country-Capital Quiz with File Handling
+
+#### Tasks:
+1. Read the file `countrties.txt` (provided in the resources section) which contains countries and their capitals.
+2. Store the data in a `HashMap<String, String>` where the key is the country and the value is the capital.
+3. Ask the user for their name.
+4. Randomly select a country from the `HashMap` and prompt the user to enter the corresponding capital.
+   - If the user answers correctly, add one point to their score.
+5. Repeat the process 10 times.
+6. Save the user's name and score in a file named `classification.txt`.
+
+---
+
+## 🚀 Level 2: Exercises
+
+### Exercise 1: Restaurant Class with Unique Constraints
+
+#### Class:
+- **Restaurant**:
+   - Attributes: `name`, `score`.
+
+#### Tasks:
+1. Implement the necessary methods to ensure that no two `Restaurant` objects with the same name and score can be added to a `HashSet`.
+   - Restaurants with the same name but different scores are allowed.
+   - Restaurants with the same name and score are not allowed.
+
+---
+
+### Exercise 2: Sorting Restaurants by Name and Score
+
+#### Tasks:
+1. Using the `Restaurant` class from the previous exercise, implement the necessary logic to sort `Restaurant` objects by name and score in descending order.
+   - Example:
+      - `name: restaurant1, score: 8`
+      - `name: restaurant1, score: 7`
+
+---
+
+## 🛠️ How to Use
 1. Clone the repository.
+2. Open the project in your preferred Java IDE.
+3. Run the `Main` class to test the functionality.
+4. Explore all classes to understand the implementation details.
 
-2. Compile and run the Java files:
-   ```bash
-   javac 1.3.1.Exercise1.java
-   java 1.3.1.Exercise1
-   
-3. Repeat the process for `1.3.1Exercise2.java` and `1.3.1.Exercise3.java`.
+---
 
-## Resources
-
-`countries.txt`- A text file containing countries and their capitals in the format:
-
-Country1:Capital1
-Country2:Capital2
-...
+## 📝 Notes
+- Ensure you have Java installed on your system.
+- The exercises are designed to help you practice working with collections, file handling, and custom classes in Java.

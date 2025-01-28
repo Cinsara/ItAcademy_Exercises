@@ -1,6 +1,6 @@
 package Test;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class Testing {
 
@@ -10,8 +10,6 @@ public class Testing {
         int[] n1 = new int[] {1,2,3,4,5};
         int[] n2 = new int[] {1,2,3,4,5};
 
-        assertArrayEquals(n1,n2,"The arrays are the same.");
-
+        assertThat(n1).isEqualTo(n2);
     }
-
 }
