@@ -6,7 +6,7 @@ This repository contains Java exercises focused on working with collections (Arr
 
 ## 🌟 Level 1: Exercises
 
-### Exercise 1: Month Class and ArrayList/HashSet Operations
+### Main 1: Month Class and ArrayList/HashSet Operations
 
 #### Class:
 - **Month**:
@@ -20,7 +20,7 @@ This repository contains Java exercises focused on working with collections (Arr
 
 ---
 
-### Exercise 2: Reversing a List Using ListIterator
+### Main 2: Reversing a List Using ListIterator
 
 #### Tasks:
 1. Create and populate a `List<Integer>`.
@@ -29,7 +29,7 @@ This repository contains Java exercises focused on working with collections (Arr
 
 ---
 
-### Exercise 3: Country-Capital Quiz with File Handling
+### Main 3: Country-Capital Quiz with File Handling
 
 #### Tasks:
 1. Read the file `countrties.txt` (provided in the resources section) which contains countries and their capitals.
@@ -44,7 +44,7 @@ This repository contains Java exercises focused on working with collections (Arr
 
 ## 🚀 Level 2: Exercises
 
-### Exercise 1: Restaurant Class with Unique Constraints
+### Main 1: Restaurant Class with Unique Constraints
 
 #### Class:
 - **Restaurant**:
@@ -57,7 +57,7 @@ This repository contains Java exercises focused on working with collections (Arr
 
 ---
 
-### Exercise 2: Sorting Restaurants by Name and Score
+### Main 2: Sorting Restaurants by Name and Score
 
 #### Tasks:
 1. Using the `Restaurant` class from the previous exercise, implement the necessary logic to sort `Restaurant` objects by name and score in descending order.
