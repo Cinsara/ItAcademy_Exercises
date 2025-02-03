@@ -1,3 +1,5 @@
+package Classes;
+
 public class Product {
 
     protected static String name = "";

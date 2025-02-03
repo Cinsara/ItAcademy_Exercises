@@ -1,3 +1,6 @@
+package Classes;
+
+import Exceptions.EmptySaleException;
 import java.util.ArrayList;
 
 public class Sale {
