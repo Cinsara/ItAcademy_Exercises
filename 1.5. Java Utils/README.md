@@ -1,4 +1,4 @@
-# Java Exercises: File Handling, Serialization, and Directory Management 📂
+# Java Utils Exercises: File Handling, Serialization, and Directory Management 📂
 
 This repository contains Java exercises focused on working with file handling, directory management, and object serialization. Below is a breakdown of the exercises and their objectives.
 
