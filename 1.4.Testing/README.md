@@ -1,4 +1,4 @@
-# Java Exercises: Collections, File Handling, Custom Classes, and JUnit Testing 📚
+# Java Exercises: JUnit Testing and AssertJ 📚
 
 This repository contains Java exercises focused on working with collections (ArrayList, HashSet, HashMap), file handling, creating custom classes with specific behaviors, JUnit testing and Assertj. Below is a breakdown of the exercises and their objectives.
 
