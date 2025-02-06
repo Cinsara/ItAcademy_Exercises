@@ -1,42 +1,41 @@
 package Classes;
 
-public class NoGenericMethods<T> {
-    private T obj1, obj2, obj3;
+public class NoGenericMethods {
+    private String name, lastName, gender;
 
-    public NoGenericMethods(T obj1,T obj2, T obj3){
-        this.obj1 = obj1;
-        this.obj2 = obj2;
-        this.obj3 = obj3;
+    public NoGenericMethods(String name, String lastName, String gender){
+        this.name = name;
+        this.lastName = lastName;
+        this.gender = gender;
     }
 
-    public T getObj1() {
-        return obj1;
+    public String getName() {
+        return name;
     }
 
-    public T getObj2() {
-        return obj2;
+    public String getLastName() {
+        return lastName;
     }
 
-    public T getObj3() {
-        return obj3;
+    public String getGender() {
+        return gender;
     }
 
-    public void setObj1(T obj1) {
-        this.obj1 = obj1;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setObj2(T obj2) {
-        this.obj2 = obj2;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public void setObj3(T obj3) {
-        this.obj3 = obj3;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     @Override
     public String toString(){
-        return "\n Object1: " + this.obj1 +
-                "\n Object2: " + this.obj2 +
-                "\n Object3: " + this.obj3;
+        return "\n Name: %s\n Last name: %s\n Gender: %s".formatted(this.name,
+                this.lastName, this.gender);
     }
 }

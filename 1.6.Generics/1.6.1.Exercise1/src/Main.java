@@ -2,16 +2,14 @@ import Classes.NoGenericMethods;
 
 public class Main {
     public static void main(String[] args) {
-        NoGenericMethods<String> inst1 = new NoGenericMethods<>("Hello","World","!");
-        NoGenericMethods<String> inst2 = new NoGenericMethods<>("!","Hello","World");
-        NoGenericMethods<String> inst3 = new NoGenericMethods<>("World","!","Hello");
-        NoGenericMethods<String> inst4 = new NoGenericMethods<>("Hello","!","World");
+        NoGenericMethods p1 = new NoGenericMethods("Ana","Martín","Female");
+        NoGenericMethods p2 = new NoGenericMethods("Antonio","Vázquez","Male");
+        NoGenericMethods p3 = new NoGenericMethods("Laura","Vasco","Female");
 
-        System.out.println("First instance: " + inst1 +
-                "\n Second instance: " + inst2 +
-                "\n Third instance: " + inst3);
+        System.out.printf("First person: %s\n Second person: %s\n Third person: %s%n",
+                p1, p2, p3);
 
-        inst1.setObj3("Uh");
-        System.out.println("First instance after change Obj3: " + inst1);
+        p1.setLastName("German");
+        System.out.printf("First person after changes her last name: %s%n", p1);
     }
 }
