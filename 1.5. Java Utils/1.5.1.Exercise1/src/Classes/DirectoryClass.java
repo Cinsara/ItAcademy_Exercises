@@ -3,10 +3,13 @@ import java.io.File;
 import java.util.*;
 
 public class DirectoryClass {
-
         public static void directoryList(){
-            File directory = new File("C:\\Users\\formacio\\IdeaProjects\\1.5.1.Exercise1\\src\\RootDirectory");
             File[] archives = new File[]{};
+            Scanner input = new Scanner(System.in);
+            System.out.println("Please, introduce the folder path: ");
+            String path = input.nextLine();
+            System.out.printf("The path is: %s%n", path);
+            File directory = new File(path);
 
             if(directory.isDirectory()){
                 archives = directory.listFiles();

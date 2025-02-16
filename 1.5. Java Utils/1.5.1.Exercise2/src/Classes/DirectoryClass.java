@@ -6,7 +6,12 @@ import java.util.*;
 
 public class DirectoryClass {
         public static void directoryListTree(){
-            File rootDirectory = new File("C:\\Users\\formacio\\IdeaProjects\\1.5. Java Utils\\1.5.1.Exercise2\\src\\RootDirectory");
+
+            Scanner input = new Scanner(System.in);
+            System.out.println("Please, introduce the folder path: ");
+            String path = input.nextLine();
+            System.out.printf("The path is: %s%n", path);
+            File rootDirectory = new File(path);
 
             if(rootDirectory.isDirectory()){
                 System.out.println("Printing the directory list tree:");

@@ -3,12 +3,9 @@ import static Classes.DirectoryClass.serializeObjectJava;
 
 public class Main {
     public static void main(String[] args) {
-        String filePath = "object.ser";
-        String text = "Hello!";
+        serializeObjectJava();
 
-        serializeObjectJava(text, filePath);
-
-        String deserializedText = (String) deserializableObjectJava(filePath);
-        System.out.println("Deserialized text: " + deserializedText);
+        String deserializedText = (String) deserializableObjectJava();
+        System.out.printf("Deserialized text: %s%n", deserializedText);
     }
 }

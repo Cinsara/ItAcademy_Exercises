@@ -1,0 +1,8 @@
+[D] Directory1 - Last modification: 2025.02.10 dC at 10:16:36 CET
+  [D] archive - Last modification: 2025.02.10 dC at 10:16:36 CET
+    [F] txt.java - Last modification: 2025.02.10 dC at 10:16:36 CET
+  [F] archive1.txt - Last modification: 2025.02.10 dC at 10:16:36 CET
+  [F] archive2.txt - Last modification: 2025.02.10 dC at 10:16:36 CET
+  [F] barchive3.txt - Last modification: 2025.02.10 dC at 10:16:36 CET
+[D] Directory2 - Last modification: 2025.02.10 dC at 10:16:36 CET
+  [F] archive54 - Last modification: 2025.02.10 dC at 10:16:36 CET

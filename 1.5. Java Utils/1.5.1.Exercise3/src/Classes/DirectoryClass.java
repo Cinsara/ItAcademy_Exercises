@@ -9,8 +9,15 @@ import java.util.*;
 
 public class DirectoryClass {
     public static void directoryListTree(){
-        File rootDirectory = new File("C:\\Users\\formacio\\IdeaProjects\\1.5. Java Utils\\1.5.1.Exercise3\\src\\RootDirectory");
-        File saveDirectory = new File("directory_saved.txt");
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please, introduce the folder path: ");
+        String path = input.nextLine();
+        File rootDirectory = new File(path);
+
+        System.out.println("Now enter the path to save the information in a file: ");
+        String path2 = input.nextLine();
+        File saveDirectory = new File(path2);
 
         try( BufferedWriter writer = new BufferedWriter(new FileWriter(saveDirectory))){
             if(rootDirectory.isDirectory()){
@@ -20,7 +27,7 @@ public class DirectoryClass {
                 System.out.println("Something is wrong. Please, revise the directory's path.");
             }
         } catch(IOException e){
-            System.err.println("Something is wrong: " + e.getMessage());
+            System.err.printf("Something is wrong: %s%n", e.getMessage());
         }
     }
 
